@@ -39,9 +39,13 @@ header{
     margin-bottom: 1rem;
 }
 
+main{
+    width: 50%;
+    margin: auto;
+}
+
 body{
 /* Made the text slightly grey for style choice and to contrast against the black background. */
-    padding: 15rem 10rem;
     color:rgb(211, 167, 101);
     text-shadow: 1.5px 1px 2px #000000;
     font-family: "Teko";
@@ -59,11 +63,17 @@ a{
     padding-bottom: 1rem;
 }
 
-body nav, ul{
+body nav{
 /* Added a border around the list items. */
     border-style: groove;
     padding: 0;
     border-color: #ffb87f;
+    width: 50%;
+    margin: auto;
+}
+
+ul{
+    padding:0;
 }
 
 svg{
@@ -90,21 +100,13 @@ section ol{
 }
 
 @media only screen and (max-width: 579px){
-/* Adjusts the CSS to fit a desired phone screen layout. */
-    h1, h2{
-/* Changes header to fit inside background box. */
-        font-size: medium;
-    }
-/* Adjusts sizing of text. */
-    a{
-        font-size: medium;
-    }
-/* Adjust paragraph size for legibility. */
-    p{
-        width: 18rem;
-        font-size: large;
-        
-        
+    html{
+        font-size: small;
     }
 }
-/* 579px 641px */
+
+@media only screen and (max-width: 370px){
+    html{
+        font-size: 8px;
+    }
+} 
