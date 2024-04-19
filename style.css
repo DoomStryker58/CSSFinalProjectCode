@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* This is made by me, Zayan Khan from the CSS class COMP-1054 */
+
+/* Imported fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+html{
+/* Adds an image to the background, prevents it from moving, adds a margin and line height to space everything out.*/
+margin: 2rem;
+font-size: 100%;
+line-height: 1.6;
+background: #000000;
+background-image: url("interstellar.jpg");
+background-attachment: fixed;
+background-size: cover;
+line-height: 1.1;
+}
+
+html a{
+/* Adjusted the color of the text to not collide with the bright background image, and to make it stand out against it. */
+    color:rgb(175, 118, 79);
+    text-shadow: 0px 1px 1px #000000;
+}
+
+h1, h2{
+/* Centered the text as a style choice, and somewhat for easy navigation. */
+    text-align: center;
+    background-color: rgb(17, 17, 17);
+    
+}
+
+header{
+/* Made the headers pop with an 80s type design with drop shadows and larger text for legibility. */
+    font-family: "Orbitron";
+    color:#000000;
+    text-shadow: 1px 1px 2px #ffb87f;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+body{
+/* Made the text slightly grey for style choice and to contrast against the black background. */
+    padding: 15rem 10rem;
+    color:rgb(211, 167, 101);
+    text-shadow: 1.5px 1px 2px #000000;
+    font-family: "Teko";
+    text-align: center;
+}
+body li{
+/* Removed the list style to adjust the li more differently. */
+    text-align: center;
+    margin: 0.8rem;
+    list-style: none;
+}
+
+a{
+/* Tried adjusting the spacing. */
+    padding-bottom: 1rem;
+}
+
+body nav, ul{
+/* Added a border around the list items. */
+    border-style: groove;
+    padding: 0;
+    border-color: #ffb87f;
+}
+
+svg{
+/* REMOVES THE STARS. */
+    display: none;
+    margin: 3rem;
+}
+
+header span{
+/* Lowers the opacity to 0, and removes it from sight, while spacing out the height and width. */
+    opacity: 0%;
+    width: 1rem;
+    height: 1rem;
+}
+
+div svg{
+/* Lowers the opacity to 0, and also removes it from sight. */
+    opacity: 0%;
+}
+
+section ol{
+
+    padding: 0;
+}
+
+@media only screen and (max-width: 579px){
+/* Adjusts the CSS to fit a desired phone screen layout. */
+    h1, h2{
+/* Changes header to fit inside background box. */
+        font-size: medium;
+    }
+/* Adjusts sizing of text. */
+    a{
+        font-size: medium;
+    }
+/* Adjust paragraph size for legibility. */
+    p{
+        width: 18rem;
+        font-size: large;
+        
+        
+    }
+}
+/* 579px 641px */
